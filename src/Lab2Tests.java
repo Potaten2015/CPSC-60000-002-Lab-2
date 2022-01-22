@@ -16,4 +16,15 @@ public class Lab2Tests {
 		assertEquals(2, mixer.getTotalMixed(), 0.0);
 	}
 	
+	@Test
+	public void TestTubeBuilder() {
+		TubeBuilder blackoutBuilder = new MediumBlackoutTubeBuilder();
+		Tube blackoutTube = blackoutBuilder.buildTube();
+		Cap blackoutTubeCap = blackoutTube.getCap();
+		assertEquals("black", blackoutTubeCap.getColor());
+		Body blackoutTubeBody = blackoutTube.getBody();
+		assertEquals("black", blackoutTubeBody.getColor());
+		assertEquals(8, blackoutTubeBody.getSize(), 0);
+	}
+	
 }
