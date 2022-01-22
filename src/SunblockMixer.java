@@ -1,4 +1,9 @@
 
+/**
+ * A singleton class for creating a Sunblock Mixer
+ * @author tatenknight
+ * @return A class used to mix sunblock
+ */
 public class SunblockMixer {
 	private static SunblockMixer mixer;
 	private double totalMixed = 0;

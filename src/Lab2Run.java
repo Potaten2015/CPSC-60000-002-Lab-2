@@ -1,4 +1,8 @@
 
+/**
+ * Demonstrates successful use of factory and singleton design patterns
+ * @author tatenknight
+ */
 public class Lab2Run {
 
 	public static void main(String[] args) {
@@ -14,6 +18,7 @@ public class Lab2Run {
 		mixer = SunblockMixer.getMixer();
 		System.out.println(mixer.getRequiredPowder());
 		System.out.println("");
+		
 		// Create and use various sunblock builder factories
 		TubeBuilder cottonCandyBuilder = new LargeCottonCandyTubeBuilder();
 		TubeBuilder blackoutBuilder = new MediumBlackoutTubeBuilder();
