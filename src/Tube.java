@@ -3,9 +3,9 @@ public abstract class Tube {
 	private Cap cap;
 	private Body body;
 	
-	public Tube(Cap cap, Body body) {
-		this.cap = cap;
-		this.body = body;
+	public Tube(TubePartFactory factory) {
+		this.cap = factory.createCap();
+		this.body = factory.createBody();
 	}
 	
 	public void describe() {

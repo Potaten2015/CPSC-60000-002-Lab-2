@@ -18,8 +18,8 @@ public class Lab2Tests {
 	
 	@Test
 	public void TestTubeBuilder() {
-		TubeBuilder blackoutBuilder = new MediumBlackoutTubeBuilder();
-		Tube blackoutTube = blackoutBuilder.buildTube();
+		TubeBuilder tubeBuilder = new SimpleTubeBuilder();
+		Tube blackoutTube = tubeBuilder.buildTube("blackout");
 		Cap blackoutTubeCap = blackoutTube.getCap();
 		assertEquals("black", blackoutTubeCap.getColor());
 		Body blackoutTubeBody = blackoutTube.getBody();

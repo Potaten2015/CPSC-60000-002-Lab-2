@@ -20,15 +20,9 @@ public class Lab2Run {
 		System.out.println("");
 		
 		// Create and use various sunblock builder factories
-		TubeBuilder cottonCandyBuilder = new LargeCottonCandyTubeBuilder();
-		TubeBuilder blackoutBuilder = new MediumBlackoutTubeBuilder();
-		TubeBuilder sunriseBuilder = new SmallSunriseTubeBuilder();
+		TubeBuilder tubeBuilder = new SimpleTubeBuilder();
 		
-		cottonCandyBuilder.buildTube();
-		blackoutBuilder.buildTube();
-		sunriseBuilder.buildTube();
-		
-		Tube blackoutTube = blackoutBuilder.buildTube();
+		Tube blackoutTube = tubeBuilder.buildTube("blackout");
 		Body blackoutTubeBody = blackoutTube.getBody();
 		System.out.println(blackoutTubeBody.getColor());
 		System.out.println(blackoutTubeBody.getSize());
