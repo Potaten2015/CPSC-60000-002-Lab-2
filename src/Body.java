@@ -1,17 +1,8 @@
 
-public class Body {
-	private String color;
-	private double size;
-	public Body(String color, double size) {
-		this.color = color;
-		this.size = size;
-	}
+public abstract class Body {
 	
-	public String getColor() {
-		return this.color;
-	}
+	public abstract String getColor();
 	
-	public Double getSize() {
-		return this.size;
-	}
+	public abstract Double getSize();
+	
 }

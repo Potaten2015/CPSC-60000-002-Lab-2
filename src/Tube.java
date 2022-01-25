@@ -1,5 +1,5 @@
 
-public class Tube {
+public abstract class Tube {
 	private Cap cap;
 	private Body body;
 	
